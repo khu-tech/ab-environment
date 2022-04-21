@@ -22,5 +22,5 @@ Copy paste the full URLs of these two deployed functions.
 
 ## How it works
 
-On the index.html, 
+On the index.html, https://user-images.githubusercontent.com/82540340/164559232-88c24687-fea7-4e88-8788-93cb97b8332e.png 
 
