@@ -36,3 +36,6 @@ ServiceConfiguration: {attributes: "V2"} under index.html appConfig is a self de
 
 <img width="964" alt="Screen Shot 2022-04-21 at 3 28 38 PM" src="https://user-images.githubusercontent.com/82540340/164561888-7dee89da-74d4-40a4-b4d1-31cf5bcb2fcb.png">
 
+This two base URL can be set using .env file, and they are the base URL of the two Twilio services after you deploy the functions. 
+
+<img width="884" alt="Screen Shot 2022-04-21 at 3 31 33 PM" src="https://user-images.githubusercontent.com/82540340/164562172-3cec989b-045c-45ae-b8a3-e9c4781d149a.png">
