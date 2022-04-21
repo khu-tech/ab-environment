@@ -30,3 +30,9 @@ Specify the name and version (version could be defined by your own internal vers
 
 <img width="1007" alt="Screen Shot 2022-04-21 at 3 13 30 PM" src="https://user-images.githubusercontent.com/82540340/164560350-a7d7b34a-961e-49bb-98a4-2068f8abf43d.png">
 
+ServiceConfiguration: {attributes: "V2"} under index.html appConfig is a self defined value, using this way you can store this configuration under window.appConfig and retrieve it from the plugin code. For instance, 
+
+<img width="1002" alt="Screen Shot 2022-04-21 at 3 28 27 PM" src="https://user-images.githubusercontent.com/82540340/164561885-c95f2660-4a4c-4714-a0ed-de498c3f1ffa.png">
+
+<img width="964" alt="Screen Shot 2022-04-21 at 3 28 38 PM" src="https://user-images.githubusercontent.com/82540340/164561888-7dee89da-74d4-40a4-b4d1-31cf5bcb2fcb.png">
+
