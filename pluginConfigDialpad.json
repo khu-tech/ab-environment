@@ -1,0 +1,5 @@
+[{
+	"name": "plugin-sample",
+	"version": "1.0.0",
+	"src": "https://twilio-asurion-test.s3.us-west-2.amazonaws.com/plugin-sample.js"
+}]
