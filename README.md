@@ -1,31 +1,27 @@
-# Your custom Twilio Flex Plugin
+# A/B environment
+A/B environment is a concept to run different version of code in production which links to the same Twilio Flex account. This example uses self-hosting technology on AWS S3 in order to realize this goal. 
 
-Twilio Flex Plugins allow you to customize the appearance and behavior of [Twilio Flex](https://www.twilio.com/flex). If you want to learn more about the capabilities and how to use the API, check out our [Flex documentation](https://www.twilio.com/docs/flex).
 
-## Setup
+## S3 Setup
 
-Make sure you have [Node.js](https://nodejs.org) as well as [`npm`](https://npmjs.com). We support Node >= 10.12 (and recommend the _even_ versions of Node). Afterwards, install the dependencies by running `npm install`:
+1. Set up an AWS account 
+2. Create an S3 bucket 
+3. Create two folders under this S3 bucket, one folder for environment A; and the other folder for environment B. 
+4. Upload index.html, pluginConfigDialpad.json, plugin-sample.js to folder A. 
 
-```bash
-cd 
+## Plugin build file setup 
+In order to load custom plugins, we need to store the plugin build file to an external URL. To generate this build file, go to the plugin directory and run 
+twilio flex:plugins:build, and take the *.js file (for example, plugin-sample), upload to the S3 folder, copy/paste the S3 url. 
 
-# If you use npm
-npm install
+## Service function deployment 
+Flex deployment often times include Twilio function deployment. There are multiple ways to maintain two versions of the function files with two different URLs. Here in this example we use two different service. 
+
+Go to the Twilio function CLI folder directory and run "twilio serverless:deploy --service-name environmentalpha" and "twilio serverless:deploy --service-name environmentbeta" if you don't have existing services named "environmentalpha" and "environmentbeta". If these two environments already exist, go to "package.json" file under this directory and make sure the "name" here equals the name of the service you are going to deploy to, and then run "twilio serverless:deploy"
+
+Copy paste the full URLs of these two deployed functions. 
+
 ```
 
-Next, please install the [Twilio CLI](https://www.twilio.com/docs/twilio-cli/quickstart) by running:
+## How it works
 
-```bash
-brew tap twilio/brew && brew install twilio
-```
-
-Finally, install the [Flex Plugin extension](https://github.com/twilio-labs/plugin-flex/tree/v1-beta) for the Twilio CLI:
-
-```bash
-twilio plugins:install @twilio-labs/plugin-flex
-```
-
-## Development
-
-Run `twilio flex:plugins --help` to see all the commands we currently support. For further details on Flex Plugins refer to our documentation on the [Twilio Docs](https://www.twilio.com/docs/flex/developer/plugins/cli) page.
 
