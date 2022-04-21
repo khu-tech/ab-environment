@@ -39,3 +39,9 @@ ServiceConfiguration: {attributes: "V2"} under index.html appConfig is a self de
 This two base URL can be set using .env file, and they are the base URL of the two Twilio services after you deploy the functions. 
 
 <img width="884" alt="Screen Shot 2022-04-21 at 3 31 33 PM" src="https://user-images.githubusercontent.com/82540340/164562172-3cec989b-045c-45ae-b8a3-e9c4781d149a.png">
+
+## Swap A/B environment in production 
+When swapping A/B environment in production, you can simply replace the URL with the URL from the other environment, and let the serviceConfiguration attribute set to the corresponding version under the other environment. 
+
+## Gotchas 
+
