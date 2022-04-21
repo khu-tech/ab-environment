@@ -20,8 +20,7 @@ Go to the Twilio function CLI folder directory and run "twilio serverless:deploy
 
 Copy paste the full URLs of these two deployed functions. 
 
-```
-
 ## How it works
 
+On the index.html, 
 
