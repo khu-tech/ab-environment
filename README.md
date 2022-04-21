@@ -22,5 +22,7 @@ Copy paste the full URLs of these two deployed functions.
 
 ## How it works
 
-On the index.html, <img src="https://user-images.githubusercontent.com/82540340/164559232-88c24687-fea7-4e88-8788-93cb97b8332e.png" alt="Alt text" title="Optional title">
+On the index.html, appConfig is sitting under the window global variables. Under pluginService, the url should point to a plugin configuration file which defines version and location of the plugin. 
+
+<img src="https://user-images.githubusercontent.com/82540340/164559232-88c24687-fea7-4e88-8788-93cb97b8332e.png" alt="Alt text" title="Optional title">
 
