@@ -1,5 +1,5 @@
 # A/B environment
-A/B environment is a concept to run different version of code in production which links to the same Twilio Flex account. This example uses self-hosting technology on AWS S3 in order to realize this goal. 
+A/B environment is a concept to run different version of code in production which links to the same Twilio Flex account. This example uses self-hosting technology on AWS S3 in order to implement this feature. 
 
 
 ## S3 Setup
