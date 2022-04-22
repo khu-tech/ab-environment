@@ -24,7 +24,7 @@ Copy paste the full URLs of these two deployed functions.
 
 On the index.html, appConfig is sitting under the window global variables. Under pluginService, the url should point to a plugin configuration file which defines version and location of the plugin. 
 
-<img src="https://user-images.githubusercontent.com/82540340/164559232-88c24687-fea7-4e88-8788-93cb97b8332e.png" alt="Alt text" title="Optional title">
+<img width="1219" alt="pluginConfg" src="https://user-images.githubusercontent.com/82540340/164814272-9dd8c551-4df8-4d4e-a8ff-1b920ab13d07.png">
 
 Specify the name and version (version could be defined by your own internal version number) and link to the place where it stores the plugin build file. On this json file you can configure multiple different plugins. Don't configure the same plugin multiple times under the same file, even though they might be on different version, to avoid conflict of loading plugins on UI. 
 
