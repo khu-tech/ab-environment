@@ -45,8 +45,9 @@ When swapping A/B environment in production, you can simply replace the URL with
 
 ## Gotchas 
 ####
-"delete appConfig" before assigning to new value, since appConfig is set in window.appConfig and is a global variable, refreshing the page will not update the current config on the same browser, may cause issues when agents load the Flex page. 
-
+a. "delete appConfig" before assigning to new value, since appConfig is set in window.appConfig and is a global variable, refreshing the page will not update the current config on the same browser, may cause issues when agents load the Flex page. 
+b. putting the environment a and environment b folder into same S3 bucket. During testing the feature, setting two environment in two different buckets caused CORS issue even though CORS configuration was set correctly to the S3 bucket. 
+c. make sure to set the service base URL in .env file, and handle the case when appConfig is undefined. 
 
 
 
