@@ -44,4 +44,9 @@ This two base URL can be set using .env file, and they are the base URL of the t
 When swapping A/B environment in production, you can simply replace the URL with the URL from the other environment, and let the serviceConfiguration attribute set to the corresponding version under the other environment. 
 
 ## Gotchas 
+####
+"delete appConfig" before assigning to new value, since appConfig is set in window.appConfig and is a global variable, refreshing the page will not update the current config on the same browser, may cause issues when agents load the Flex page. 
+
+
+
 
